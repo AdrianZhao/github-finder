@@ -1,0 +1,60 @@
+.container {
+  width: min(100% - 3rem, 120rem);
+  margin-inline: auto;
+}
+main {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  height: 18.8rem;
+  width: 40rem;
+}
+.wrapper h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 5rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+.search-wrapper {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  height: 5rem;
+}
+input[type=text], input[type=submit] {
+  height: 5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 5px;
+  border: #000 1px solid;
+}
+input[type=text] {
+  width: 29rem;
+  transition: all 0.3s ease-in-out;
+}
+input[type=text]:focus {
+  border-color: #ee8232;
+}
+input[type=submit] {
+  width: 9rem;
+  background-color: #ee8232;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #ee8232;
+}
+.message {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 1.5rem;
+}
