@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom'
+
+const apiKey = process.env.REACT_APP_GIT_HUB_TOKEN;
 const User = () => {
   const { username } = useParams();
   const [user, setUser] = useState('');
   const [repos, setRepos] = useState([]);
   useEffect(() => {
-    const token = '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';
-    const options = {headers: { Authorization: `Bearer ${token}`}};
+    const options = {headers: { Authorization: `Bearer ${apiKey}`}};
     const fetchUser = async () => {
       try {
         const response = await axios.get(`https://api.github.com/users/${username}`, options);

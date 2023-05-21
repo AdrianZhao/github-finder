@@ -3,15 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 
+const apiKey = process.env.REACT_APP_GIT_HUB_TOKEN;
 const Search = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
-  const token = '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';
-  const options = {headers: { Authorization: `Bearer ${token}`}};
+  const options = {headers: { Authorization: `Bearer ${apiKey}`}};
 
   const isUser = async (name) => {
-    console.log(name);
     try {
       const response = await axios.get(`https://api.github.com/users/${name}`, options);
       console.log(response.data);
