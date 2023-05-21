@@ -7,7 +7,7 @@ const User = () => {
   const [user, setUser] = useState('');
   const [repos, setRepos] = useState([]);
   useEffect(() => {
-    const token = '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';
+    const token = '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';
     const options = {headers: { Authorization: `Bearer ${token}`}};
     const fetchUser = async () => {
       try {

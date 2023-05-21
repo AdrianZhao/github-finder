@@ -52,11 +52,15 @@ input[type=submit]:hover {
   background-color: #fff;
   color: #ee8232;
 }
+.message-wrapper {
+  height: 1.8rem;
+}
 .message {
   font-size: 1.8rem;
   font-weight: 600;
   color: #fff;
   margin-top: 1.5rem;
+  margin-left: 1rem;
 }
 .info-wrapper{
   padding: 5rem;

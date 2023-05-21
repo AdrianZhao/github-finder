@@ -7,7 +7,7 @@ function App() {
     <Router>
       <main>
         <Routes>
-          <Route exact path="/" element={<Search />}/>
+          <Route exact path="/github-finder" element={<Search />}/>
           <Route exact path='/user/:username' element={<User />} />
         </Routes>
       </main>

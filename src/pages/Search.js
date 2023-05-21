@@ -7,10 +7,11 @@ const Search = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
-  const token = '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';
+  const token = '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';
   const options = {headers: { Authorization: `Bearer ${token}`}};
 
   const isUser = async (name) => {
+    console.log(name);
     try {
       const response = await axios.get(`https://api.github.com/users/${name}`, options);
       console.log(response.data);
@@ -28,7 +29,9 @@ const Search = () => {
     <div className='container box'>
       <div className="wrapper">
         <h2>Github Finder</h2>
-        <p className="message"><br />{errors.name?.message}</p>
+        <div className='message-wrapper'>
+          <p className="message">{errors.name?.message}</p>
+        </div>
         <form className="search-wrapper" onSubmit={handleSubmit(onSubmit)}>
           <input 
             type='text' 
