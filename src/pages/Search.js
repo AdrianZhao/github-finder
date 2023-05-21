@@ -7,7 +7,7 @@ const Search = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
-  const token = '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';
+  const token = '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';
   const options = {headers: { Authorization: `Bearer ${token}`}};
 
   const isUser = async (name) => {
