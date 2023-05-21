@@ -59,98 +59,85 @@ input[type=submit]:hover {
   margin-top: 1.5rem;
 }
 .info-wrapper{
-  padding: 5rem;
   margin-bottom: auto;
   margin-top: 10rem;
   display: grid;
   justify-content: center;
   align-items: center;
 }
+.repos {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 23%;
+  text-align: left;
+}
+
 img {
   margin: auto;
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
 }
-.info-wrapper h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 4rem;
-  margin-top: 1rem;
-  font-weight: 600;
+
+.info h1 {
+  margin-top: 10px;
+  font-weight: 500;
 }
-.detail-wrapper {
-  margin-top: 1.5rem;
-  display: flex;
-}
-.detail-wrapper p {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.75rem;
-}
+
 span {
   display: inline-block;
-  text-align: left;
-  width: 5rem;
-  margin-left: 0.5rem;
-  color: yellow;
+  text-align: center;
+  width: 100px;
+  color: #008000;
   font-weight: 600;
   font-size: 1.75rem;
 }
-button {
-  width: 25rem;
-  height: 5rem;
-  font-size: 1.8rem;
-  font-weight: 800;
-  border-radius: 5px;
-  padding: 5px;
-  border: #000 1px solid;
-  background-color: #ee8232;
-  margin: 0;
-  position: absolute;
-  top: 47.5%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+
+.p {
+  display: flex;
+  text-align: center;
 }
+
+.info p {
+  width: 100px;
+  color: #000;
+}
+
+button {
+  width: 200px;
+  border-radius: 50px;
+  left: 33px;
+}
+
 .link {
-  font-size: 2.5rem;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
 }
-.repos-wrapper {
-  margin: 0;
-  position: absolute;
-  top: 57.5%;
-  left: calc((100% - 1000px )/ 2);
-  text-align: left;
-}
-.repos-wrapper h2 {
-  color: #fff;
-  font-size: 3.5rem;
-  font-weight: 700;
-}
+
+
 .repo {
-  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem;
-  background-color: #2f2f2f;
-  width: 100rem;
-  height: 10rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: var(--app-grey-bg);
+  width: 800px;
+  height: 80px;
   border-radius: 8px;
 }
-.repo h3 {
-  font-size: 2rem;
-  color: #ee8232;
+
+.last-updated {
+  color: #666;
+}
+
+h2 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
   font-weight: 600;
 }
-.repo p {
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.4);
-  margin-top: 0.5rem;
-}
-.time {
-  color: rgba(255, 255, 255, 0.6);
+
+h3 {
+  color:#008000;
 }
